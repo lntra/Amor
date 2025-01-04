@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p{
+  font-family: "Heebo", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+
+.parent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/pattern.png'); /* Replace with your pattern path */
+  background-repeat: repeat;
+  background-size: 1275px;
+  background-position: center;
+  opacity: 0.1; /* Adjust the opacity here */
+  z-index: 0; /* Keep it behind all content */
+}
+.meio {
+  position: absolute; /* Positioning it above the other elements */
+  top: 50%; /* Adjust if necessary */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  z-index: 20;
+}
+
+.center-button {
+  position: absolute; /* Position the button absolutely */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the button */
+  padding: 12.5px 60px;
+  border-radius: 32px;
+  background-image: linear-gradient(to right, #E41F1F, #FC3D3D);   
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.esquerda,
+.direita {
+  position: absolute;
+  z-index: 5; /* Ensures these elements appear above the background pattern */
+}
+
+.esquerda {
+  top: 0;
+  left: 0;
+  width: 64px; /* Adjust as needed */
+}
+
+.direita {
+  bottom: 0;
+  right: 0;
+  width: 64px; /* Adjust as needed */
+}
+
+
+/* Modal overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-out;
+  z-index: 50;
+  font-family: "Heebo", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Modal style */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: scaleUp 0.3s ease-out;
+  position: relative;
+}
+
+/* Animation for the modal appearance */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Close button */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #21243D;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Input field */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: white;
+  color: #21243D;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #E41F1F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #FC3D3D;
+}
