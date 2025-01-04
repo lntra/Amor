@@ -8,7 +8,7 @@ const BrabosDaFolha = () => {
         <h1 className="flex justify-center items-center font-bold">NA MINUTAGEM CANTA QUEM SABE</h1>
         </div>
         <div className="image-box">
-            <iframe width="350" height="315" src="https://www.youtube.com/embed/ZKaC2-k1ves?si=nrGFGQ1wGplRPUx2&amp;start=104" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/ZKaC2-k1ves?si=nrGFGQ1wGplRPUx2&amp;start=104" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
     </div>
     );
