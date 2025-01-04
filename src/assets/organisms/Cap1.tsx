@@ -11,7 +11,7 @@ const Cap1 = () => {
     };
 
     const handlePrevious = () => {
-        navigate("/");
+        navigate("/Amor");
     };
 
     return (

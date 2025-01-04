@@ -7,7 +7,7 @@ const Cap2 = () => {
     const navigate = useNavigate();
 
     const handleNext = () => {
-        navigate("/");
+        navigate("/Amor");
     };
 
     const handlePrevious = () => {
