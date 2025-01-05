@@ -29,12 +29,7 @@ const Home = () => {
         // Navigate to a route based on the submitted input value
         if (inputValue === "AMORDAMINHAVIDA-EA-GAROTA-ALICE") {
             navigate("/Cap1");
-        } else {
-                    
-            if (inputValue !== null && inputValue !== ""){
-                navigate(`/${inputValue}`)
-            }
-        }
+        } 
 
         setModalOpen(false); // Close the modal after submission
     };

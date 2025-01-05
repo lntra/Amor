@@ -11,10 +11,6 @@ import Cap6 from './assets/organisms/Cap6';
 import Cap7 from './assets/organisms/Cap7';
 import Cap8 from './assets/organisms/Cap8';
 import Cap9 from './assets/organisms/Cap9';
-import K74 from './assets/organisms/K74';
-import BrabosDaFolha from './assets/organisms/BrabosDaFolha';
-import Museu2 from './assets/organisms/Museu2';
-import Museu1 from './assets/organisms/Museu1';
 
 function App() {
   return (
@@ -36,10 +32,6 @@ function App() {
           <Route path="/Cap7" element={<Cap7 />} />
           <Route path="/Cap8" element={<Cap8 />} />
           <Route path="/Cap9" element={<Cap9 />} />
-          <Route path="/BrabosDaFolha" element={<BrabosDaFolha />} />
-          <Route path="/K74" element={<K74 />} />
-          <Route path="/Museu1" element={<Museu1 />} />
-          <Route path="/Museu2" element={<Museu2 />} />
         </Routes>
     </>
   )
